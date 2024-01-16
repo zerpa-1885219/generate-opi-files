@@ -60,17 +60,18 @@ def process_module_template(module_name, module_id):
     return data
 
 
+def format_activity_name(activity_name):
+    # Remove .mp4 and everything before the second space
+    formatted_activity_name = activity_name.replace('.mp4', '')[activity_name.index('-') + 2:]
+    return formatted_activity_name
+
+
 def process_activity_template(activity_name, activity_path):
     with open(activity_template_path, 'r') as file:
         data = json.load(file)
 
-    formatted_activity_name = activity_name.replace('.mp4', '')
-    first_space = formatted_activity_name.find(' ')
-    if first_space != -1:
-        formatted_activity_name = formatted_activity_name[first_space + 1:]
-
     # Capitalize first letter
-    formatted_activity_name = formatted_activity_name[0].upper() + formatted_activity_name[1:]
+    formatted_activity_name = format_activity_name(activity_name)
 
     data["2"]["name"][0]["value"] = formatted_activity_name
     data["2"]["files"]["file1"]["file_name"] = activity_path
@@ -163,8 +164,5 @@ def main(folder_path):
 
 if __name__ == "__main__":
     print("Starting...")
-    main_folder = "/home/juan/Downloads/DIGITAZON"
-    for folder in os.listdir(main_folder):
-        folder_path = os.path.join(main_folder, folder)
-        print(f"Processing {folder_path}")
-        main(folder_path)
+    path = "/home/juan/Downloads/COURSE TEST/input/Webflow"
+    main(path)

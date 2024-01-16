@@ -1,0 +1,198 @@
+{
+  "2": {
+    "id": [
+      {
+        "value": "2"
+      }
+    ],
+    "uuid": [
+      {
+        "value": "c6fb8d4e-4e51-4cc8-bbbb-24dc1149c00c"
+      }
+    ],
+    "vid": [
+      {
+        "value": "2"
+      }
+    ],
+    "langcode": [
+      {
+        "value": "en"
+      }
+    ],
+    "revision_created": [
+      {
+        "value": "1704627859"
+      }
+    ],
+    "revision_user": [],
+    "revision_log_message": [],
+    "uid": [
+      {
+        "target_id": "1"
+      }
+    ],
+    "name": [
+      {
+        "value": "test module"
+      }
+    ],
+    "module_media_image": [],
+    "description": [
+      {
+        "value": "\u003Cp\u003Edescription module\u003C\/p\u003E\r\n",
+        "format": "basic_html"
+      }
+    ],
+    "status": [
+      {
+        "value": "1"
+      }
+    ],
+    "created": [
+      {
+        "value": "1704627859"
+      }
+    ],
+    "changed": [
+      {
+        "value": "1704627859"
+      }
+    ],
+    "random_activity_score": [
+      {
+        "value": "1"
+      }
+    ],
+    "allow_resume": [
+      {
+        "value": "1"
+      }
+    ],
+    "backwards_navigation": [
+      {
+        "value": "1"
+      }
+    ],
+    "randomization": [
+      {
+        "value": "0"
+      }
+    ],
+    "random_activities": [
+      {
+        "value": "1"
+      }
+    ],
+    "takes": [
+      {
+        "value": "0"
+      }
+    ],
+    "show_attempt_stats": [
+      {
+        "value": "1"
+      }
+    ],
+    "keep_results": [
+      {
+        "value": "2"
+      }
+    ],
+    "hide_results": [
+      {
+        "value": "0"
+      }
+    ],
+    "badge_active": [
+      {
+        "value": "0"
+      }
+    ],
+    "badge_name": [],
+    "badge_description": [],
+    "badge_criteria": [
+      {
+        "value": "finished"
+      }
+    ],
+    "badge_media_image": [],
+    "skills_active": [
+      {
+        "value": "0"
+      }
+    ],
+    "skill_target": [],
+    "module_global": [
+      {
+        "value": "0"
+      }
+    ],
+    "default_langcode": [
+      {
+        "value": "1"
+      }
+    ],
+    "revision_default": [
+      {
+        "value": "1"
+      }
+    ],
+    "revision_translation_affected": [
+      {
+        "value": "1"
+      }
+    ],
+    "parent_links": [],
+    "managed_content": {
+      "id": [
+        {
+          "value": 3
+        }
+      ],
+      "group_id": [
+        {
+          "target_id": 2,
+          "target_type": "group",
+          "target_uuid": "fce719ef-a9d7-4496-bb0a-006924e76094",
+          "url": "\/group\/3"
+        }
+      ],
+      "group_content_type_id": [
+        {
+          "value": "ContentTypeModule"
+        }
+      ],
+      "entity_id": [
+        {
+          "value": 2
+        }
+      ],
+      "success_score_min": [
+        {
+          "value": 0
+        }
+      ],
+      "is_mandatory": [
+        {
+          "value": true
+        }
+      ],
+      "coordinate_x": [
+        {
+          "value": 1
+        }
+      ],
+      "coordinate_y": [
+        {
+          "value": 1
+        }
+      ],
+      "in_skills_system": [
+        {
+          "value": false
+        }
+      ]
+    }
+  }
+}

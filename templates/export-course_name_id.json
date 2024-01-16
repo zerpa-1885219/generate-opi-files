@@ -1,0 +1,79 @@
+{
+  "2": {
+     "field_guided_navigation": [
+      {
+        "value": "1"
+      }
+     ],
+    "id": [
+      {
+        "value": "2"
+      }
+    ],
+    "uuid": [
+      {
+        "value": "fce719ef-a9d7-4496-bb0a-006924e76094"
+      }
+    ],
+    "langcode": [
+      {
+        "value": "en"
+      }
+    ],
+    "type": [
+      {
+        "target_id": "opigno_course"
+      }
+    ],
+    "uid": [
+      {
+        "target_id": "1"
+      }
+    ],
+    "label": [
+      {
+        "value": "Test course 1"
+      }
+    ],
+    "created": [
+      {
+        "value": "1704629276"
+      }
+    ],
+    "changed": [
+      {
+        "value": "1704629276"
+      }
+    ],
+    "path": [
+      {
+        "langcode": "en"
+      }
+    ],
+    "default_langcode": [
+      {
+        "value": "1"
+      }
+    ],
+    "badge_active": [
+      {
+        "value": "0"
+      }
+    ],
+    "badge_criteria": [
+      {
+        "value": "finished"
+      }
+    ],
+    "badge_description": [],
+    "badge_media_image": [],
+    "badge_name": [],
+    "field_course_description": [
+      {
+        "value": "\u003Cp\u003Ecourse\u003C\/p\u003E\r\n",
+        "format": "basic_html"
+      }
+    ],
+    "field_course_media_image": []
+  }
+}

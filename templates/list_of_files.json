@@ -1,0 +1,13 @@
+{
+  "course": "export-course_Test course 1_3.json",
+  "modules": {},
+  "activities": {
+    "test module_2": [
+      "export-activity_test video 1_7.json",
+      "export-activity_test video 2_8.json"
+    ],
+    "test module 2_3": [
+      "export-activity_test video 3_9.json"
+    ]
+  }
+}

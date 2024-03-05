@@ -72,7 +72,7 @@ def format_activity_name(activity_name):
     return formatted_activity_name
 
 
-def process_activity_template(activity_name, activity_path):
+def process_activity_template(activity_name, activity_path, activity_size):
     with open(activity_template_path, 'r') as file:
         data = json.load(file)
 
@@ -81,6 +81,7 @@ def process_activity_template(activity_name, activity_path):
 
     data["2"]["name"][0]["value"] = formatted_activity_name
     data["2"]["files"]["file1"]["file_name"] = activity_path
+    data["2"]["files"]["file1"]["file_size"] = activity_size
 
     print(activity_path)
 
@@ -148,7 +149,8 @@ def main(folder_path):
                 if activity_name.endswith('.mp4'):
                     # Process and save activity template
                     activity_path = f"{course_name}/{module_name}/{activity_name}"
-                    activity_data = process_activity_template(activity_name, activity_path)
+                    activity_size = os.path.getsize(os.path.join(folder_path, module_name, activity_name))
+                    activity_data = process_activity_template(activity_name, activity_path, activity_size)
                     acitivity_file_name = format_file_name(activity_name, 'activity', current_activity_id)
                     list_of_files_data["activities"][module_name].append(acitivity_file_name)
 
@@ -170,8 +172,9 @@ def main(folder_path):
 
 if __name__ == "__main__":
     print("Starting...")
-    main_folder = "/home/juan/Downloads/DIGITAZON"
+    main_folder = "/home/juan/Downloads/COURSE TEST/input/Full stack developer"
     for folder in os.listdir(main_folder):
         folder_path = os.path.join(main_folder, folder)
         print(f"Processing {folder_path}")
+        print(folder_path)
         main(folder_path)
